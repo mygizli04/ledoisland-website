@@ -8,4 +8,6 @@ app.use(express.static("public"))
 app.use("/js", express.static("js"))
 app.use("/ts", express.static("ts"))
 
-app.listen(80)
+app.listen(80, () => {
+    console.log("Listening on port 80.")
+})

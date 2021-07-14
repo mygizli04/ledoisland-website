@@ -1,4 +1,3 @@
-// @ts-check
 // This is the file responsible for the file serving.
 // This gives us more control in case we want to add more than just file serving.
 
@@ -57,6 +56,7 @@ app.get("/server", (req, res) => {
             }))
         }
         else {
+            result.error = false
             res.send(JSON.stringify(result))
         }
     })

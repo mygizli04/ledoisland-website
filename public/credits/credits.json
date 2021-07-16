@@ -1,0 +1,30 @@
+{
+    "team": [
+        {
+            "name": "Midoism",
+            "role": "Owner & Deveolper",
+            "description": "14 years old coder i know javascript html css.",
+            "email": "mohamedabdallahgh@outlook.com"
+        },
+        {
+            "name": "Interns",
+            "role": "Minecraft Server Manger",
+            "description": "I'm a Philippinian.",
+            "email": "interns.roblox@gmail.com"
+        },
+        {
+            "name": "Karou",
+            "role": "Builder",
+            "description": "Hello,i'm karou. i like to play video games with friend's."
+        }
+    ],
+    "artTeam": [
+        {
+            "name": "Interns",
+            "role": "Minecraft Server Manger",
+            "description": "I'm a Philippinian.",
+            "email": "interns.roblox@gmail.com",
+            "image": "xiana.jpeg"
+        }
+    ]
+}

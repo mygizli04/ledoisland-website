@@ -19,6 +19,15 @@ function nbsp(count: number) {
     return ret
 }
 
+function strLength(str: string, length: number): string {
+    if (str.length < length) {
+        return nbsp(length - str.length) + str
+    }
+    else {
+        return str
+    }
+}
+
 function processTeam(member: Credit) {
     let divContents = '<div class="member">'
 
@@ -30,7 +39,7 @@ function processTeam(member: Credit) {
         memberImage = "https://mc-heads.net/avatar/" + member.name
     }
 
-    divContents += '<img width=128 height=128 src="' + memberImage + '"><span class="memberInfo">' + nbsp(8) + '<b>' + member.name + "</b></span></div>"
+    divContents += '<img width=128 height=128 src="' + memberImage + '"><span class="memberInfo">' + nbsp(8) + '<b>' + member.name + '</b><br><i>' + strLength(member.role, 15) + '</i></span></div>'
     return divContents
 }
 

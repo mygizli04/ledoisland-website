@@ -39,8 +39,13 @@ function processTeam(member: Credit) {
         memberImage = "https://mc-heads.net/avatar/" + member.name
     }
 
-    divContents += '<img width=128 height=128 src="' + memberImage + '"><span class="memberInfo">' + nbsp(8) + '<b>' + member.name + '</b><br><i>' + strLength(member.role, 15) + '</i></span></div>'
-    return divContents
+    divContents += '<img width=128 height=128 src="' + memberImage + '"><span class="memberInfo">' + nbsp(8) + '<b>' + member.name + '</b><br><i>' + strLength(member.role, 9 + member.name.length) + '</i><br><br>' + member.description + '</span>'
+
+    if (member.email) {
+        divContents += '<br><br>E-Mail: <a href="mailto:' + member.email + '">' + member.email + '</a>'
+    }
+
+    return divContents + "</div>"
 }
 
 fetch("credits.json").then(res => res.json().then((credits: CreditData) => {

@@ -4,6 +4,7 @@ interface Credit {
     description: string,
     email?: string
     image?: string
+    minecraftName?: string
 }
 
 interface CreditData {
@@ -34,6 +35,9 @@ function processTeam(member: Credit) {
     let memberImage = ""
     if (member.image) {
         memberImage = member.image
+    }
+    else if (member.minecraftName) {
+        memberImage = "https://mc-heads.net/avatar/" + member.minecraftName
     }
     else {
         memberImage = "https://mc-heads.net/avatar/" + member.name

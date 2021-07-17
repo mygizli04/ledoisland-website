@@ -17,6 +17,12 @@
           },
           "email": {
             "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "minecraftName": {
+            "type": "string"
           }
         },
         "required": [

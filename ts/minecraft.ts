@@ -24,7 +24,7 @@ fetch("/server").then(res => res.json().then((data: Server) => {
                 description += '<span style="color: ' + parseColor(motd.color) + ';">' + motd.text + "</span>"
             })
         }
-        document.body.innerHTML = `Description: ${description}<br>Latency: ${data.latency}<br>Players: ${data.players.online}/${data.players.max}<br>Version: ${data.version.name}<br>`
+        document.getElementById("results")!.innerHTML = `Description: ${description}<br>Latency: ${data.latency}<br>Players: ${data.players.online}/${data.players.max}<br>Version: ${data.version.name}<br>`
     }
 }))
 

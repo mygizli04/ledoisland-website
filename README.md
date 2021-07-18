@@ -3,8 +3,8 @@ This repository has been in the ledoisland website now you can check it go to ht
 
 ## About
 ledoisland is a multimedia group that try to make in most of the games news or anything else to have a server group newspaper and much more, we still in devolping, i believe it's gonna be a big company, i will try my best to make it bigger and bigger, thank you for reading
-sign 
-= midoism
+by
+<b>Midoism<b>
 ### How to run
 <code>npm run start</code>
 

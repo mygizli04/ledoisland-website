@@ -1,4 +1,4 @@
-// This is the file responsible for the file serving. 
+// This is the file responsible for the file serving.
 // This gives us more control in case we want to add more than just file serving.
 
 const express = require("express")
